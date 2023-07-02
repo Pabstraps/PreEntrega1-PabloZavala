@@ -38,4 +38,9 @@
 }
 
 
+.cart-widget-container {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+}
 

@@ -1,10 +1,9 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import BotonCarrito from '../../components/CartWidget/CartWidget'
+import React from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import BotonCarrito from '../CartWidget/CartWidget';
 
 
-function MenuSuperior() {
+function NavBar() {
   return (
     <div>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -13,12 +12,16 @@ function MenuSuperior() {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Categorias</Nav.Link>
-            <Nav.Link href="#pricing" id ="carrito"><BotonCarrito/></Nav.Link>
+          </Nav>
+          <Nav className="ms-auto">
+            <Nav.Link id="carrito" className="cart-widget-container">
+              <BotonCarrito/>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-      </div>
+    </div>
   )
 }
 
-export default MenuSuperior;
+export default NavBar;
