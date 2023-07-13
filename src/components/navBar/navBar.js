@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import BotonCarrito from '../CartWidget/CartWidget';
-
+import {Link,NavLink} from 'react-router-dom'
 
 function NavBar() {
   return (
@@ -10,13 +10,13 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home">Kirintor Store</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Categorias</Nav.Link>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/components/Categorias">Categorias</NavLink>
           </Nav>
           <Nav className="ms-auto">
-            <Nav.Link id="carrito" className="cart-widget-container">
+            <NavLink to="/carrito" className="cart-widget-container">
               <BotonCarrito/>
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>
