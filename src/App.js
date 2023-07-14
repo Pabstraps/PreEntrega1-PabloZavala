@@ -1,11 +1,12 @@
 import './App.css';
 import NavBar from '../src/components/navBar/navBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ApiContainer from './components/ApiContainer';
 
 import Cartwidget from '../src/components/CartWidget/CartWidget'
 import Categorias from './components/Categorias';
 import Error from './components/Error';
+
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
     </Routes>
      </BrowserRouter>
 
-     <ItemListContainer greeting = "Bienvenido!"/>
+     <ApiContainer/>
+     
     </div>
   );
 }

@@ -8,7 +8,7 @@ function NavBar() {
     <div>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Kirintor Store</Navbar.Brand>
+          <Navbar.Brand href="#Home">Kirintor Store</Navbar.Brand>
           <Nav className="me-auto">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/components/Categorias">Categorias</NavLink>
